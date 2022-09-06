@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WCFLib.Modules;
 
 namespace WCFWeb
 {
@@ -23,6 +24,7 @@ namespace WCFWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<ProductModule,ProductModule>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

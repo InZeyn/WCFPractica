@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using WCFLib.Models;
 using WCFLib.Modules;
 using WCFWeb.Models;
@@ -11,7 +12,6 @@ namespace WCFWeb.Controllers
         private readonly ProductModule _productModule;
         public ActionResult Index()
         {
-            _productModule.GetProducts();
             return View();
         }
 

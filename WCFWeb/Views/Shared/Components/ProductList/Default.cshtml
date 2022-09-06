@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ProductViewModel>
+
+<h3>Products</h3>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Product.Name</li>
+    }
+</ul>
